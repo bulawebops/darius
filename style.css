@@ -1,15 +1,15 @@
 /* General Reset */
-        * {
+        :root {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2em;
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+            padding: 10px;
             min-height: 100vh;
         }
 
@@ -19,69 +19,26 @@
             background: white;
             padding: 40px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
+            border-radius: 6px;
         }
 
         header {
             text-align: center;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .subtitle {
-            font-size: 1.2em;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-
-        .date-time {
-            font-size: 1em;
-            color: #888;
-            margin-top: 10px;
-        }
-
-        .decorative-line {
-            width: 100px;
-            height: 3px;
-            background: linear-gradient(to right, #667eea, #764ba2);
-            margin: 20px auto;
+            border-bottom: 2px solid #667eea;
+            padding: 20px 0px;
+            margin: 0 0 30px 0;
         }
 
         section {
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            font-size: 1.8em;
-            color: #667eea;
-            margin-bottom: 15px;
-            border-left: 4px solid #667eea;
-            padding-left: 15px;
-        }
-
-        h3 {
-            font-size: 1.3em;
-            color: #764ba2;
-            margin-top: 20px;
             margin-bottom: 10px;
         }
 
-        p {
-            margin-bottom: 15px;
-            color: #444;
-            text-align: justify;
+        h2 {
+            font-size: 2em;
+            color: #000;
         }
 
-        .welcome-text {
+        .thank-text {
             font-size: 1.1em;
             line-height: 1.8;
             text-align: center;
@@ -159,26 +116,10 @@
             color: #333;
         }
 
-        .scripture {
-            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #764ba2;
-            margin: 20px 0;
-        }
-
-        .scripture-text {
-            font-style: italic;
-            font-size: 1.1em;
-            color: #333;
-            margin-bottom: 10px;
-            line-height: 1.8;
-        }
-
-        .scripture-ref {
-            text-align: right;
-            color: #764ba2;
-            font-weight: bold;
+        .candidate-photo {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
 
         .hymn-box {
@@ -202,16 +143,11 @@
             text-align: center;
         }
 
-        .closing-message {
-            font-size: 1.1em;
-            color: #555;
-            font-style: italic;
-            margin-bottom: 15px;
-        }
-
         .church-info {
             color: #888;
             font-size: 0.95em;
+            font-weight: bold;
+            line-height: 1.25em;
         }
 
         /* Print styles */
