@@ -57,4 +57,7 @@
 
 ---
 
+![Darius Lauti](https://github.com/bulawebops/darius/blob/main/images/darius.png)
+
+
 
