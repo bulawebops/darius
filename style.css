@@ -1,195 +1,234 @@
-/* General Reset */
-        :root {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* Better reset (keeps your look, prevents overflow issues) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 2em;
-            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
-            padding: 10px;
-            min-height: 100vh;
-        }
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            border-radius: 6px;
-        }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    padding: 10px;
+    min-height: 100vh;
+}
 
-        header {
-            text-align: center;
-            border-bottom: 2px solid #667eea;
-            padding: 20px 0px;
-            margin: 0 0 30px 0;
-        }
+/* Container becomes fluid on small screens but preserves max width */
+.container {
+    width: min(800px, 100%);
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
 
-        section {
-            margin-bottom: 10px;
-        }
+header {
+    text-align: center;
+    border-bottom: 2px solid #667eea;
+    padding: 20px 0px;
+    margin: 0 0 30px 0;
+}
 
-        h2 {
-            font-size: 2em;
-            color: #000;
-        }
+section {
+    margin-bottom: 10px;
+}
 
-        .thank-text {
-            font-size: 1.1em;
-            line-height: 1.8;
-            text-align: center;
-            font-style: italic;
-            color: #555;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
+/* Prevent long titles from overflowing */
+h2 {
+    font-size: 2em;
+    color: #000;
+    line-height: 1.2;
+    margin: 12px 0 0;
+    overflow-wrap: anywhere;
+}
 
-        .order-list {
-            list-style: none;
-            counter-reset: item;
-        }
+/* Links should wrap on mobile */
+a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
 
-        .order-list li {
-            counter-increment: item;
-            margin-bottom: 20px;
-            padding-left: 50px;
-            position: relative;
-        }
+.thank-text {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px 0;
+}
 
-        .order-list li::before {
-            content: counter(item);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: #667eea;
-            color: white;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
+/* ORDER LIST */
+.order-list {
+    list-style: none;
+    counter-reset: item;
+    padding: 0;
+    /* important: avoid mobile indent overflow */
+    margin: 0;
+}
 
-        .order-list .item-title {
-            font-weight: bold;
-            color: #333;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-        }
+.order-list li {
+    counter-increment: item;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    position: relative;
+}
 
-        .order-list .item-detail {
-            color: #666;
-            font-style: italic;
-            font-size: 0.95em;
-        }
+/* Intro row should NOT be numbered */
+.order-list li.intro {
+    counter-increment: none;
+    padding-left: 0;
+}
 
-        .candidates {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
+.order-list li.intro::before {
+    content: none;
+}
 
-        .candidates ul {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
+.order-list li::before {
+    content: counter(item);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #667eea;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
 
-        .candidates li {
-            padding: 10px;
-            background: white;
-            border-left: 3px solid #667eea;
-            border-radius: 4px;
-            font-weight: 500;
-            color: #333;
-        }
+.order-list .item-title {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    overflow-wrap: anywhere;
+    /* prevents long names from breaking layout */
+}
 
-        .candidate-photo {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
+.order-list .item-detail {
+    color: #666;
+    font-style: italic;
+    font-size: 0.95em;
+}
 
-        .hymn-box {
-            background: #f8f9fa;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
-            border: 2px dashed #667eea;
-        }
+.hymn-box {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 2px dashed #667eea;
+}
 
-        .hymn-title {
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 5px;
-        }
+.hymn-title {
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 5px;
+}
 
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 3px solid #667eea;
-            text-align: center;
-        }
+/* PHOTO AREA */
+.candidates {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
 
-        .church-info {
-            color: #888;
-            font-size: 0.95em;
-            font-weight: bold;
-            line-height: 1.25em;
-        }
+/* Make image responsive + keep centered */
+.candidate-photo {
+    width: min(760px, 100%);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
-        /* Print styles */
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 3px solid #667eea;
+    text-align: center;
+}
 
-            .container {
-                box-shadow: none;
-                padding: 20px;
-            }
+.church-info {
+    color: #888;
+    font-size: 0.95em;
+    font-weight: bold;
+    line-height: 1.25em;
+    overflow-wrap: anywhere;
+}
 
-            h1 {
-                color: black;
-            }
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
 
-            h2 {
-                color: black;
-            }
+    .container {
+        box-shadow: none;
+        padding: 20px;
+    }
 
-            .order-list li::before {
-                background: #333;
-            }
-        }
+    h2 {
+        color: black;
+    }
 
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
+    .order-list li::before {
+        background: #333;
+    }
+}
 
-            h1 {
-                font-size: 2em;
-            }
+/* Responsive design (keeps your feel, just scales) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
 
-            h2 {
-                font-size: 1.5em;
-            }
+    h2 {
+        font-size: 1.5em;
+    }
 
-            .candidates ul {
-                grid-template-columns: 1fr;
-            }
-        }
+    .order-list li {
+        padding-left: 44px;
+        /* slightly smaller left gutter on mobile */
+    }
+
+    .order-list li::before {
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+    }
+
+    body {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding: 16px;
+    }
+
+    .thank-text {
+        padding: 16px;
+        font-size: 1.02em;
+    }
+
+    .hymn-box {
+        padding: 12px;
+    }
+}
