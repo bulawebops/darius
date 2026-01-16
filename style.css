@@ -19,16 +19,7 @@ body {
     min-height: 100vh;
 }
 
-/* Container becomes fluid on small screens but preserves max width */
-/*
-.container {
-    width: min(800px, 100%);
-    margin: 0 auto;
-    background: white;
-    padding: 40px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-}
-*/
+/* Container responsive on small screens but preserves max width */
 .container {
     width: min(800px, 100%);
     margin: 0 auto;
