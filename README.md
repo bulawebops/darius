@@ -9,15 +9,15 @@
 
 ## Presiding & Conducting
 
-- **Presiding:** Brother Johnny Taukeiaho  
-- **Conducting:** Brother Jason Faga  
+- **Presiding:** Brother Taukeiaho  
+- **Conducting:** Brother Faga  
 
 ---
 
 ## Music
 
-- **Pianist:** Sister Phyllis Fetalaiga  
-- **Chorister:** Sister Salamasina Ioane-Lee  
+- **Pianist:** Phyllis Fetalaiga  
+- **Chorister:** Salamasina Ioane-Lee  
 
 ---
 
@@ -25,9 +25,9 @@
 
 1. **Opening Song:** *#16 – Come Follow Me*  
 2. **Opening Prayer:** Mary Lynne Faga  
-3. **Talk on Baptism:** Sister Jen Ioane  
+3. **Talk on Baptism:** Jen Ioane  
 
-   ❤️ **Baptismal Ordinance** by Brother Jessie Mariner  
+   ❤️ **Baptismal Ordinance** by Jessie Mariner  
    *Two Witnesses:* Elder Nelson & Elder Black  
 
 4. **Message from the Missionaries**  
@@ -35,9 +35,9 @@
    🎵 **Special Musical Number**  
    *Jettlee Ioane & Jaisha Ioane Tuaileva*  
 
-5. **Talk on the Holy Ghost:** Sister Noelani Ioane  
+5. **Talk on the Holy Ghost:** Noelani Ioane  
 
-   🕊 **Confirmation** by Brother Jarom Ioane  
+   🕊 **Confirmation** by Jarom Ioane  
    *Confirmation Circle:*  
    Stake and/or Ward Leadership, Missionaries,  
    Demetrius Fetalaiga, Steve Fetalaiga,  
@@ -45,7 +45,7 @@
 
 6. **Closing Remarks**  
 7. **Closing Song:** *#301 – I Am a Child of God*  
-8. **Closing Prayer:** Brother Demetrius Fetalaiga  
+8. **Closing Prayer:** Demetrius Fetalaiga  
 
 ---
 
