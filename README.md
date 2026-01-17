@@ -25,7 +25,7 @@
 
 1. **Opening Song:** *#16 – Come Follow Me*  
 2. **Opening Prayer:** Mary Lynne Faga  
-3. **Talk on Baptism:** Brother Jen Ioane  
+3. **Talk on Baptism:** Sister Jen Ioane  
 
    ❤️ **Baptismal Ordinance** by Brother Jessie Mariner  
    *Two Witnesses:* Elder Nelson & Elder Black  
