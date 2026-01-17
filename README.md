@@ -23,7 +23,7 @@
 
 ## Order of Service
 
-1. **Opening Song:** *#16 – Come Follow Me*  
+1. **Opening Song:** *#116 – Come Follow Me*  
 2. **Opening Prayer:** Mary Lynne Faga  
 3. **Talk on Baptism:** Jen Ioane  
 
@@ -43,7 +43,7 @@
    Demetrius Fetalaiga, Steve Fetalaiga,  
    Junior Ioane, Pepe Lee, Jessie Mariner  
 
-6. **Closing Remarks**  
+6. **Closing Remarks** Under the direction of Presiding Officer 
 7. **Closing Song:** *#301 – I Am a Child of God*  
 8. **Closing Prayer:** Demetrius Fetalaiga  
 
